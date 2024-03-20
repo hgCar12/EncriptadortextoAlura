@@ -1,0 +1,55 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <main>
+
+        <section section="principal">
+            <!--<img class="logo" src="img/Logo.png"/>-->
+            <h1 class="titulo">Encriptador de Texto</h1>
+            <p class="subtitulo">Challenge elaborado para <a href="https://app.aluracursos.com/user/azuke-neet12">Alura Latam</a></p>
+            <textarea id="texto-nuevo" class="texto-nuevo" placeholder="¡Escribe el texto aquí!"></textarea>
+            <p class="principal-dos"><img src="img/sig.png" class="signo">Escribe solamente minúsculas y sin acentos.</p>
+            <div class="botones">
+                <button id="encripta" class="encriptar" onclick="botonEncriptar(), mostrarcopiar(), mostrarExitoEncriptar(), ocultar()" disabled>Encriptar</button>
+                <button id="desencriptar" class="desencriptar" onclick="botonDesncriptar(), mostrarcopiar(), mostrarExitoDesencriptar(), ocultar()" disabled>Desencriptar</button>
+            </div>
+        </section>
+        <section class="secundario">
+            <textarea id="texto-encriptado" class="texto-encriptado" disabled></textarea>
+            <img id="muñeco" class="muneco" src="img/Muñeco.png"/>
+            <div class="secundario-dos">
+                <p id="frase" class="frase">Ningún mensaje fue encontrado</p>
+                <p id="mensaje" class="mensaje">Escribe el texto que deseas Encriptar o Desencriptar</p>
+            </div>
+            <p id="exito-enc" class="exito-encriptar">¡Tu mensaje fue encriptado con éxito!</p>
+            <p id="exito-des" class="exito-desencriptar">¡Tu mensaje a sido desencriptado!</p>
+            <button id="copiar" class="copiar" onclick="botonCopiar(), ocultarboton(), mostrar(), ocultarTexto(), desabilitarBotones()">
+                Copiar
+            </button>
+        </section>
+    </main>
+
+    <footer id="pie">
+        <p class="copyright">&copy Carlos Hernandez ISC "HG_CarN"</p>
+        <nav class="redes-sociales">
+            <ul>
+                <li class="links"><a href="https://www.linkedin.com/in/carloshernandez-isc/">LinkedIn</a></li>
+                <li class="links"><a href="https://github.com/hgCar12">GitHub</a></li>
+                <li class="links"><a href="https://www.instagram.com/hgcar_n/">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
